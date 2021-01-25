@@ -71,7 +71,7 @@ DATABASES = {
 'ENGINE': 'django.db.backends.mysql',
 'NAME': 'proxy', #数据库名
 'USER': 'root', #数据库用户名
-'PASSWORD': '66cd6380c913211csbsqgxy', #数据库密码
+'PASSWORD': '[GITHUB]', #数据库密码
 'HOST': 'localhost', #数据库服务器ip
 'PORT': '3306', #数据库端口
 }
