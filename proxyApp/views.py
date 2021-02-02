@@ -7,7 +7,7 @@ from django.http import JsonResponse
 # Create your views here.
 def index(request):
     # return render()
-    return render(request, 'proxyApp/index.html')
+    return render(request, 'proxyApp/api_document.html')
 @csrf_exempt
 def api(request):
     data = {
@@ -40,7 +40,7 @@ def api(request):
             data['data'] = "用户名不存在"
             return JsonResponse(data, content_type='application/json')
     else:
-        return render(request, 'proxyApp/index.html')
+        return render(request, 'proxyApp/api_document.html')
 def ip_list(user,request):
     '''
     只用来判断，post中携带的参数，然后根据参数调用不同的方法
