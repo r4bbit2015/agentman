@@ -16,9 +16,10 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from django.urls import path,include
+from indexApp import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('proxyApp.urls')),
-    path('', include('indexApp.urls')),
 
+    path('', include('indexApp.urls')),
+    path('', include('proxyApp.urls')),
 ]

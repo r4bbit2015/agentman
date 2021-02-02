@@ -14,7 +14,8 @@ SECRET_KEY = 'k&ard*hs82=w8b%sre##mi@!#+j5+_88=49(rz6d)s=gsld5!_'
 # SECURITY WARNING: don't run with debug turned on in production!
 #DEBUG 值要等于True
 #2021年1月24日部署nginx
-DEBUG = False
+#2021年2月2日 在实际开发中 使用nginx+uwsgi特别不方便 移除 后续再部署静态
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -113,7 +114,8 @@ USE_TZ = True
 AUTH_USER_MODEL='auth.User'
 
 STATIC_URL = '/static/'
-STATIC_ROOT = '/root/work/AgentMan/static/'
-# STATICFILES_DIRS = [
-#     os.path.join(BASE_DIR, 'static'),
-# ]
+# STATIC_ROOT = '/root/work/AgentMan/static/'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+]
+print(STATICFILES_DIRS);
